@@ -1,0 +1,23 @@
+{
+    "name": "IBB-Free",
+    "image": "mcr.microsoft.com/devcontainers/universal:2",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "ms-vscode.vscode-typescript-tslint-plugin",
+                "dbaeumer.vscode-eslint",
+                "esbenp.prettier-vscode",
+                "ms-azuretools.vscode-docker",
+                "ms-vscode-remote.remote-containers",
+                "angular.ng-template",
+                "redhat.vscode-yaml",
+                "PKief.material-icon-theme" // Added Material Icon Theme extension
+            ],
+            "settings": {
+                "workbench.iconTheme": "material-icon-theme",
+                "workbench.colorTheme": "GitHub Dark Default"
+            }
+        }
+    },
+    "postCreateCommand": "npm install && npm install -g @angular/cli"
+}
